@@ -2,10 +2,20 @@ from datetime import datetime
 import requests
 from telegram import Bot
 
+import os
+from datetime import datetime
+import requests
+from telegram import Bot
+
+# ✅ Configura tus datos desde variables de entorno
+TOKEN = os.environ["BOT_TOKEN"]
+CHAT_ID = os.environ["CHAT_ID"]
+URL_RECORDATORIOS = os.environ["URL_RECORDATORIOS"]
+
 # 🟢 Configura tus datos aquí
-TOKEN = "7408806495:AAGzphvP6LZfCjVjzMKaZsuErKdaz9Ojwac"
-CHAT_ID = -1002800656521  # puede ser ID de grupo o canal
-URL_RECORDATORIOS = "https://api.sheetbest.com/sheets/8464ab9b-9fda-467a-a722-ad469e3cf4d8"
+#TOKEN = "7408806495:AAGzphvP6LZfCjVjzMKaZsuErKdaz9Ojwac"
+#CHAT_ID = -1002800656521  # puede ser ID de grupo o canal
+#URL_RECORDATORIOS = "https://api.sheetbest.com/sheets/8464ab9b-9fda-467a-a722-ad469e3cf4d8"
 
 # 🧠 Inicializa el bot
 bot = Bot(token=TOKEN)
