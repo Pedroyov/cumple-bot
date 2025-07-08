@@ -1,0 +1,8 @@
+services:
+  - type: cron
+    name: notificador-diario
+    env: python
+    schedule: "0 13 * * *"  # 8:00am Perú (UTC-5)
+    plan: free
+    buildCommand: ""
+    startCommand: "python auto_notificador.py"
