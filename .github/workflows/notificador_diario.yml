@@ -2,7 +2,7 @@ name: Notificador diario
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # Todos los dias a las 08:00 UTC
+    - cron: '0 13 * * *'  # Todos los dias a las 08:00 UTC
   workflow_dispatch:
 
 jobs:
