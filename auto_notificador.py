@@ -1,7 +1,3 @@
-from datetime import datetime
-import requests
-from telegram import Bot
-
 import os
 from datetime import datetime
 import requests
