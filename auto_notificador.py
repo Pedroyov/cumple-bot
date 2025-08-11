@@ -28,7 +28,7 @@ def notificar_eventos_hoy():
     cumple_hoy = []
     eventos_hoy = []
 
-    for item in data:
+    for item in data["recordatorios"]:
         if item["fecha"] == hoy:
             if item["tipo"].lower() == "cumpleaños":
                 cumple_hoy.append(f"🎂 ¡Hoy es el Onomastico de *{item['nombre']}*! 🎉")
